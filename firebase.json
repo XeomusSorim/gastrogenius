@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site":"g4str0g3nius",
+    "public": "dist\\gastrogenius",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
