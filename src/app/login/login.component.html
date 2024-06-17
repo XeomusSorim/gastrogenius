@@ -1,22 +1,19 @@
 <div class="fondo">
-    <img src="https://www.edubull.com/images/blog/online-hobby-courses.jpg" alt="mujer cocinando">
+    <img src="https://www.edubull.com/images/blog/online-hobby-courses.jpg" alt="mujer cocinando" class="background-img">
     <div class="container">
         <div class="form">
             <span class="formtitle">Let's cook!</span>
 
-
             <div class="inputs">
-                <input type="text" class="forminput" placeholder="email">
+                <input type="text" class="forminput" placeholder="email" [(ngModel)]="user">
                 <div>
-                    <input type="text" class="forminput" placeholder="password">
+                    <input type="password" class="forminput" placeholder="password" [(ngModel)]="password">
                 </div>
             </div>
 
             <div>
-                <button class="btn btn-primary" type="submit">Log In</button>
+                <button (click)="logIn()" class="btn btn-primary" type="submit">Log In</button>
             </div>
-
         </div>
-
     </div>
 </div>
