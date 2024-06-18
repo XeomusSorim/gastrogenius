@@ -125,7 +125,6 @@ html {
     border-color: #fc6402 !important;
     color: white !important;
     margin-top: 20px;
-    /* Separación de 20px del input de arriba */
 }
 
 .log-in-btn:hover {
@@ -138,14 +137,22 @@ html {
 .sign-up-btn:active,
 .sign-up-btn:visited {
     background-color: #5a5d66 !important;
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     border-color: #5a5d66 !important;
     margin-left: 15px !important;
     margin-top: 20px;
-    /* Separación de 20px del input de arriba */
 }
 
 .sign-up-btn:hover {
     background-color: #787b85 !important;
     border-color: #787b85 !important;
+}
+
+.signupbtnregister,
+.signupbtnregister:focus,
+.signupbtnregister:active,
+.signupbtnregister:visited {
+    color: rgb(255, 255, 255) !important;
+    background-color: #fc7a33 !important;
+    border-color: #fc7a33 !important;
 }
