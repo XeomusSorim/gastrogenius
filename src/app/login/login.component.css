@@ -117,8 +117,35 @@ html {
     /* Aumentar sombra en foco */
 }
 
-.btn {
-    background-color: #fc6402;
-    border-color: #fc6402;
-    margin-top: 15px;
+.log-in-btn,
+.log-in-btn:focus,
+.log-in-btn:active,
+.log-in-btn:visited {
+    background-color: #fc6402 !important;
+    border-color: #fc6402 !important;
+    color: white !important;
+    margin-top: 20px;
+    /* Separación de 20px del input de arriba */
+}
+
+.log-in-btn:hover {
+    background-color: #fc7a33 !important;
+    border-color: #fc7a33 !important;
+}
+
+.sign-up-btn,
+.sign-up-btn:focus,
+.sign-up-btn:active,
+.sign-up-btn:visited {
+    background-color: #5a5d66 !important;
+    color: white !important;
+    border-color: #5a5d66 !important;
+    margin-left: 15px !important;
+    margin-top: 20px;
+    /* Separación de 20px del input de arriba */
+}
+
+.sign-up-btn:hover {
+    background-color: #787b85 !important;
+    border-color: #787b85 !important;
 }
