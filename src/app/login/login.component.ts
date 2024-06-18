@@ -57,7 +57,29 @@ export class LoginComponent implements AfterViewInit {
   }
 
   async signUp() {
+    // Validaciones
+    if (
+      !this.registerUser ||
+      !this.registerPassword ||
+      !this.registerUsername
+    ) {
+      alert('Todos los campos son obligatorios');
+      return;
+    }
+
     try {
+      // Verificar si el usuario ya existe
+      const userQuery = query(
+        this.Usuarios,
+        where('User', '==', this.registerUser)
+      );
+      const querySnapshot = await getDocs(userQuery);
+
+      if (!querySnapshot.empty) {
+        alert('El nombre de usuario ya está en uso');
+        return;
+      }
+
       // Crear un nuevo documento en la colección 'Usuarios' con un ID único generado automáticamente
       const docRef = await addDoc(this.Usuarios, {
         User: this.registerUser,
